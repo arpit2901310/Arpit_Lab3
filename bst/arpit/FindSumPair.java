@@ -34,7 +34,7 @@ public class FindSumPair {
 	public void findPairWithGivenSum (Node root, int sum)
 	{
 		HashSet<Integer> set = new HashSet<Integer>();
-		if (findpairUtil1(root, sum, set))
+		if (!findpairUtil1(root, sum, set))
 			System.out.print ("Pairs do not exit" + "\n"); findpairUtil1(root, sum, set);
 
 
